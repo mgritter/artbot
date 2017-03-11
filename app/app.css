@@ -1,0 +1,17 @@
+/* app css stylesheet */
+
+.outside {
+    border-left: 3px solid black;
+    padding: 12pt 12pt 12pt 12pt;
+}
+
+.artwork {
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.traceryJson {
+    font: 10pt courier;
+    width: 100%;
+    min-height: 80pt;
+}

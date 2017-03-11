@@ -1,0 +1,18 @@
+<div class="outside">
+  
+<input type="button" ng-click="genGallery()" value="Generate a new bot"/>
+
+<div>
+<h2>Gallery:</h2>
+<div class="artwork" ng-bind-html="svg1"></div>
+<div class="artwork" ng-bind-html="svg2"></div>
+<div class="artwork" ng-bind-html="svg3"></div>
+</div>
+
+<div>
+  <h2>Tracery code:</h2>
+  <textarea class="traceryJson" ng-model="botPretty">
+  </textarea>
+</div>
+  
+</div>
