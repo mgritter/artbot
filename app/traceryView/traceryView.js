@@ -186,6 +186,9 @@ angular.module('myApp.traceryView', ['ngRoute'])
 	    console.log( $scope.botText );
 	    $scope.botJson = JSON.parse( $scope.botText );	
 	    $scope.botGrammar = tracery.createGrammar( $scope.botJson );
+	    // Wrapper needed for CheapBotsDoneQuick
+	    $scope.botJson["header"] = "{svg " + $scope.botJson["header"];
+	    $scope.botJson["footer"] = "</svg>}";
 	    $scope.botPretty = JSON.stringify( $scope.botJson, null, 2 );
 	    $scope.genGallery();
 	}
