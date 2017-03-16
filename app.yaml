@@ -10,4 +10,14 @@
  - url: /(.*)
    static_files: app/\1
    upload: app/(.*)
-   
+
+ skip_files:
+ - ^(.*/)?#.*#$
+ - ^(.*/)?.*~$
+ - ^(.*/)?.*\.py[co]$
+ - ^(.*/)?.*/RCS/.*$
+ - ^(.*/)?\..*$
+ - ^e2e-tests.*$
+ - ^node_modules.*$
+
+
